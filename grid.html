@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <style>
+        :root {
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container,
+        .container-flex {
+            text-align: center;
+        }
+
+        nav {
+            background-color: #eee;
+        }
+
+        [class^=col-] {
+            background-color: #eee;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-flex">
+        <div class="row">
+            <header class="col-12">
+                <h1>Логотип</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Домой</a></li>
+                        <li><a href="#">Товары</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <main>
+            <div class="row">
+                <div class="col-12">Характеристики</div>
+            </div>
+            <div class="row">
+                <div class="col-3">Колонка 1</div>
+                <div class="col-6">
+                    Колонка 2
+                </div>
+                <div class="col-3">Колонка 3</div>
+            </div>
+        </main>
+        <footer class="row">
+            <p class="col-12">&copy; DevDesk School 2020</p>
+        </footer>
+    </div>
+</body>
+
+</html>

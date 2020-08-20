@@ -1,0 +1,147 @@
+:root {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    height: 2em;
+    background-color: #F4A460;
+    color: white;
+    font-weight: 700;
+    vertical-align: auto;
+    text-align: center;
+}
+
+.menu {
+    height: 2em;
+    background-color: #4682B4;
+}
+.menu a {
+    text-decoration: none;
+    color: wheat;
+    text-align: center;
+}
+
+
+/*
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    width: 125px;
+}
+
+.menu ul li:hover a {
+    background-color: #008080;
+}
+
+.menu ul::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.box {
+    float: left; 
+    border: 0;
+    margin: 0;
+}
+
+.one {
+    min-height: calc(100vh - 4em);
+    background-color: #EE82EE;
+    width: 20%;
+}
+
+.second {
+    width: 60%;
+    min-height: calc(100vh - 4em);
+    margin: 0 auto;
+}
+
+.third {
+    min-height: calc(100vh - 4em);
+    width: 20%;
+    background-color: #9ACD32;
+}
+
+.item img {
+    float: left ;
+    width: 4,5em;
+    height: 5em;
+    margin: 10px;
+    clear: right;
+}
+
+.item p {
+    margin-left: 5em;
+}
+
+.item {
+    float: left;
+    width: 45%;
+    min-width: 10em;
+    overflow: visible;
+    min-height: 10em;
+    margin: 10px;
+    font-size: medium;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+}
+
+.container::after, .second::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.footer-site {
+    height: 5em;
+    background-color: #008080;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;   
+    width: 100%;
+}
+
+.footer-site li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.footer-site a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.sosial li a:hover, .footer-site a:hover {
+    color: rebeccapurple;
+}
+*/

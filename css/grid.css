@@ -1,0 +1,51 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.3em;
+}
+
+.container-flex {
+  width: 100%;
+  padding: 0 0.3em;
+}
+
+.row {
+    margin: 0 -0.3em;
+}
+
+.row::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.row>[class^=col-] {
+    float: left;
+    padding: 0.3em;
+    margin: 0.3em;
+}
+
+.col-1 {width: calc(8.3333% - 0.6em);}
+.col-2 {width: calc(16.6667% - 0.6em);}
+.col-3 {width: calc(25% - 0.6em);}
+.col-4 {width: calc(33.3333% - 0.6em);}
+.col-5 {width: calc(41.6667% - 0.6em);}
+.col-6 {width: calc(50% - 0.6em);}
+.col-7 {width: calc(58.3333% - 0.6em);}
+.col-8 {width: calc(66.6667% - 0.6em);}
+.col-9 {width: calc(75% - 0.6em);}
+.col-10 {width: calc(83.3333% - 0.6em);}
+.col-11 {width: calc(91.6667% - 0.6em);}
+.col-12 {width: calc(100% - 0.6em);}
