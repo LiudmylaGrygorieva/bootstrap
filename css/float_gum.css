@@ -31,6 +31,15 @@
     text-align: center;
 }
 
+.row {
+    padding: 10px;
+    margin: 10px;
+}
+
+.col-3 {
+    width: calc();
+}
+
 
 /*
 .menu ul {

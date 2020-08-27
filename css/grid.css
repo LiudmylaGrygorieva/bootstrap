@@ -49,3 +49,135 @@
 .col-10 {width: calc(83.3333% - 0.6em);}
 .col-11 {width: calc(91.6667% - 0.6em);}
 .col-12 {width: calc(100% - 0.6em);}
+
+
+:root {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  height: 2em;
+  background-color: #F4A460;
+  color: white;
+  font-weight: 700;
+  vertical-align: auto;
+  text-align: center;
+}
+
+.menu {
+  height: 2em;
+  background-color: #4682B4;
+}
+.menu a {
+  text-decoration: none;
+  color: wheat;
+  text-align: center;
+}
+
+.row {
+  padding: 0.2em;
+  margin: 0.5em;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  float: left;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  width: 125px;
+}
+
+.menu ul li:hover a {
+  background-color: #008080;
+}
+
+.menu ul::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.box {
+  border: 0;
+  margin: 0;
+}
+
+.one {
+  min-height: calc(100vh - 5em);
+  background-color: #EE82EE;
+}
+
+.second {
+  min-height: calc(100vh - 4em);
+  margin: 0 auto;
+}
+
+.third {
+  min-height: calc(100vh - 4em)
+  background-color: #9ACD32;
+}
+
+.item img {
+  width: 4,5em;
+  height: 5em;
+  margin: 0.3em;
+  clear: right;
+}
+
+
+.item {
+  overflow: visible;
+  min-height: 10em;
+  font-size: medium;
+  background-color: lightblue;
+  border: 1px solid lightblue;
+}
+
+.footer-site {
+  height: 5em;
+  background-color: #008080;
+  padding-bottom: 0.6em;
+  padding-top: 0.3em;
+  text-align: center;
+  color: white;   
+}
+
+.footer-site li {
+  display: inline-block;
+  margin-right: 0.8em;
+}
+
+.footer-site a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+.sosial li a:hover, .footer-site a:hover {
+  color: rebeccapurple;
+}
+
