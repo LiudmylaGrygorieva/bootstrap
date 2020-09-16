@@ -25,6 +25,7 @@
     height: 2em;
     background-color: #4682B4;
 }
+
 .menu a {
     text-decoration: none;
     color: wheat;
@@ -32,8 +33,8 @@
 }
 
 .row {
-    padding: 10px;
-    margin: 10px;
+    padding: 1px;
+    margin: 2px;
 }
 
 .col-3 {
@@ -41,7 +42,7 @@
 }
 
 
-/*
+
 .menu ul {
     list-style: none;
 }
@@ -52,7 +53,7 @@
 
 .menu ul li a {
     display: block;
-    padding: 10px 20px;
+    padding: 5px 5px;
     text-decoration: none;
     color: white;
     width: 125px;
@@ -102,12 +103,12 @@
     float: left ;
     width: 4,5em;
     height: 5em;
-    margin: 10px;
+    margin: 5px;
     clear: right;
 }
 
 .item p {
-    margin-left: 5em;
+    margin-left: 0.1em;
 }
 
 .item {
@@ -116,7 +117,7 @@
     min-width: 10em;
     overflow: visible;
     min-height: 10em;
-    margin: 10px;
+    margin: 5px;
     font-size: medium;
     background-color: lightblue;
     border: 1px solid lightblue;
@@ -132,8 +133,8 @@
 .footer-site {
     height: 5em;
     background-color: #008080;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     text-align: center;
     color: white;   
     width: 100%;
@@ -141,7 +142,7 @@
 
 .footer-site li {
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 5px;
 }
 
 .footer-site a {
@@ -153,4 +154,4 @@
 .sosial li a:hover, .footer-site a:hover {
     color: rebeccapurple;
 }
-*/
+
