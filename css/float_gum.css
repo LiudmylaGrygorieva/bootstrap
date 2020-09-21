@@ -10,6 +10,7 @@
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .wrap {
@@ -26,96 +27,58 @@
     background-color: #4682B4;
 }
 
+.menu .col-3 {
+    display: inline-block;
+    margin: 15px;
+}
+
 .menu a {
     text-decoration: none;
     color: wheat;
     text-align: center;
 }
 
+.menu a:hover {
+    background-color: #008080;
+} 
+
 .row {
-    padding: 1px;
+    padding: 2px;
     margin: 2px;
 }
 
-.col-3 {
-    width: calc();
-}
-
-
-
-.menu ul {
-    list-style: none;
-}
-
-.menu ul li {
-    float: left;
-}
-
-.menu ul li a {
-    display: block;
-    padding: 5px 5px;
-    text-decoration: none;
-    color: white;
-    width: 125px;
-}
-
-.menu ul li:hover a {
-    background-color: #008080;
-}
-
-.menu ul::after {
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
-}
-
-.container {
-    width: 100%;
-    position: relative;
-}
-
-.box {
-    float: left; 
-    border: 0;
-    margin: 0;
-}
-
 .one {
-    min-height: calc(100vh - 4em);
+    float: left;
+    min-height: calc(100vh - 9em);
     background-color: #EE82EE;
     width: 20%;
 }
 
 .second {
+    float: left;
     width: 60%;
-    min-height: calc(100vh - 4em);
+    min-height: calc(100vh - 9em);
     margin: 0 auto;
 }
 
-.third {
-    min-height: calc(100vh - 4em);
-    width: 20%;
-    background-color: #9ACD32;
-}
-
 .item img {
-    float: left ;
-    width: 4,5em;
-    height: 5em;
-    margin: 5px;
-    clear: right;
+    float: left;
+    width: 3.5em;
+    height: 3.5em;
+    margin: 10px;
 }
 
 .item p {
-    margin-left: 0.1em;
+    margin: 0.5em;
 }
 
 .item {
-    float: left;
+    display: inline-block;  
     width: 45%;
+   /* float: left;
+    margin: 0 auto;*/
+
     min-width: 10em;
-    overflow: visible;
     min-height: 10em;
     margin: 5px;
     font-size: medium;
@@ -123,26 +86,35 @@
     border: 1px solid lightblue;
 }
 
-.container::after, .second::after {
-    content: "";
-    display: block;
-    height: 0;
+/*.now::after {
+    content: " ";
     clear: both;
+}*/
+
+.third {
+    float: left;
+    min-height: calc(100vh - 9em);
+    width: 20%;
+    background-color: #9ACD32;
 }
 
 .footer-site {
-    height: 5em;
+    clear: both;
+    height: calc(5em-2px);
     background-color: #008080;
     padding-bottom: 5px;
     padding-top: 5px;
     text-align: center;
     color: white;   
     width: 100%;
+    margin-top: 2px;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-site li {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 .footer-site a {
