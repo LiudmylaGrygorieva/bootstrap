@@ -13,21 +13,42 @@
     box-sizing: border-box;
 }
 
-.wrap {
+.row>[class^=col-] {
+    float: left;
+    /*padding: 10px;
+    margin: 10px;*/
+}
+
+.wrap .col-12 {
+    width: 100%;
     height: 2em;
     background-color: #F4A460;
     color: white;
     font-weight: 700;
-    vertical-align: auto;
     text-align: center;
+    margin-bottom: 5px;
+}
+
+/*.row {
+    float: left;
+    width: 100%;
+}*/
+
+.row::after {
+    content: " ";
+    display: block;
+    clear: both;
 }
 
 .menu {
-    height: 2em;
+    width: 100%;
+    height: 3em;
     background-color: #4682B4;
+    margin-bottom: 5px;    
 }
 
-.menu .col-3 {
+.col-3 {
+    width: calc(25% - 30px);
     display: inline-block;
     margin: 15px;
 }
@@ -35,19 +56,60 @@
 .menu a {
     text-decoration: none;
     color: wheat;
-    text-align: center;
 }
 
 .menu a:hover {
-    background-color: #008080;
+   color: #008080;
+   text-shadow: 3px 2px 5px black;    
 } 
 
-.row {
-    padding: 2px;
-    margin: 2px;
+.col-2  {
+    width: 20%;
+    min-height: calc(100vh - 9em);
+}
+
+.col-8 {
+    width: 60%;
+    min-height: calc(100vh - 9em)
 }
 
 .one {
+    background-color: #EE82EE;
+}
+
+.third {
+    background-color: #9ACD32;
+}
+
+.item img {
+    float: left;
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0.5em;
+}
+
+.item p, h2 {
+    margin: 0.5em;
+    font-size: 0.7em;
+}
+
+.item {
+    display: inline-block;  
+    min-width: 20%;
+}
+
+   /* float: left;
+    margin: 0 auto;
+
+    min-width: 10em;
+    min-height: 10em;
+    margin: 5px;
+    font-size: medium;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+}
+
+/*.one {
     float: left;
     min-height: calc(100vh - 9em);
     background-color: #EE82EE;
@@ -76,7 +138,7 @@
     display: inline-block;  
     width: 45%;
    /* float: left;
-    margin: 0 auto;*/
+    margin: 0 auto;
 
     min-width: 10em;
     min-height: 10em;
@@ -89,41 +151,43 @@
 /*.now::after {
     content: " ";
     clear: both;
-}*/
+}
 
 .third {
     float: left;
     min-height: calc(100vh - 9em);
     width: 20%;
     background-color: #9ACD32;
-}
+}*/
 
-.footer-site {
+.now .col-12  {
     clear: both;
+    width: 100%;
     height: calc(5em-2px);
     background-color: #008080;
     padding-bottom: 5px;
     padding-top: 5px;
     text-align: center;
     color: white;   
-    width: 100%;
     margin-top: 2px;
     position: absolute;
     bottom: 0;
 }
 
-.footer-site li {
+
+.sosial li {
     display: inline-block;
     margin-right: 0px;
 }
 
-.footer-site a {
+.sosial a {
     text-decoration: none;
     display: inline-block;
     color: white;
 }
 
-.sosial li a:hover, .footer-site a:hover {
+.sosial li a:hover, .sosial a:hover {
     color: rebeccapurple;
+    text-shadow: 3px 2px 5px black;
 }
 
